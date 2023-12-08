@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body
+{
+    background: var(--second-bg-color);
+    color: var(--text-color); 
+}
+section
+{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#random-text
+{
+    font-size: 46px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: -3px 0;
+    color: aqua;
+    position: relative;bottom: 20px; left: -3px;
+}
+@keyframes floatAndMove 
+{
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-50px) translateX(50px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+.btn
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;top: 25px;
+}
+.btn:hover
+{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+footer
+{
+    background-color: transparent;
+    color:aqua;
+    text-align:center;
+    padding:10px;
+    position:bottom;
+    bottom:200px;
+    font-family:century gothic;
+    font-size: 15px;
+}
+video {
+    width: 800px;
+    max-width: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+

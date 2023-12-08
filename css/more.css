@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+:root
+{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+body
+{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+section
+{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.navbar a:hover,
+.navbar a.active
+{
+    color: var(--main-color);
+}
+
+.home
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-content h3
+{
+    font-size: 21px;
+    font-weight: lighter;
+}
+.home-content h3:nth-of-type(2)
+{
+    margin-bottom: 2rem;
+}
+span
+{
+    color: var(--main-color);
+    position: relative; left: 0px; top: -20px;
+}
+.home-content p
+{
+    font-size: 1.4rem;
+    font-family: 'century gothic';
+}
+.A
+{
+    position: relative; top: -62px;
+    font-weight: 700;
+}
+.B
+{
+    position: relative; bottom: 318px; left: 30px;
+    float: right;
+    font-weight: 700;
+}
+.C
+{
+    position: relative; top: -30px;
+}
+.D
+{
+    position: relative; top: 50px; left: 0px;
+}
+.E
+{
+    position: relative; top: 50px; left: 0px;
+}
+ul
+{
+    list-style: none;
+}
+.follow
+{
+    font-size: 20px;
+    font-weight: 700;  
+    color: white;
+    position: relative; left: 0px; top: 95px;
+}
+.profile
+{
+    width: 550px;
+    height: auto;
+    position: relative; left: 90px; top: -80px;
+}
+.link
+{
+    display: inline-block;
+    padding: 8px 24px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;top: 5px;
+    transition: .4s ease;
+}
+.link:hover
+{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+.btn
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;top: 120px;
+}
+.btn:hover
+{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+footer
+{
+    background-color: transparent;
+    color:aqua;
+    text-align:center;
+    padding:10px;
+    position:bottom;
+    bottom:200px;
+    font-family:century gothic;
+    font-size: 15px;
+}
+#random-text
+{
+    font-size: 46px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    margin: -3px 0;
+    color: aqua;
+    position: relative;bottom: 80px; left: -3px;
+}
+.years
+{
+    display: inline-block;
+    padding: 12px 28px;
+    background: aqua;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;top: 0px;
+}
+.years:hover
+{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+.photoshop
+{
+    width: 60px;
+    height: auto;
+}
+.sony
+{
+    width: 60px;
+    height: auto;
+}
+.dslr
+{
+    width: 60px;
+    height: auto;
+}
+.horror
+{
+    width: 53px;
+    height: auto;
+    position: relative; bottom: -3px; left: 0px;
+}
+.music
+{
+    width: 60px;
+    height: auto;
+    position: relative; bottom: -10px; left: 0px;
+}
+.guitar
+{
+    width: 90px;
+    height: auto;
+    position: relative; bottom: 15px; left: -15px;
+} 
+.textp
+{
+    position: relative;bottom: 40px; left: 80px;
+}
+.texts
+{
+    position: relative;bottom: 40px; left: 80px;
+}
+.textd
+{
+    position: relative;bottom: 40px; left: 80px;
+}
+.texth
+{
+    position: relative;bottom: 38px; left: 80px;
+}
+.textm
+{
+    position: relative;bottom: 20px; left: 80px;
+}
+.textg
+{
+    position: relative;bottom: 60px; left: 80px;
+}
+span
+{
+    font-size: 20px;
+    font-family: 'century gothic';
+    font-weight: 900;
+}

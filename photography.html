@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport"content="with=device-width, initial-scale=1.0">
+   <title>MicroTech Production</title>
+   
+   <!-- =====Box Icons ===== -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <!-- ===== CSS Files ===== -->
+   <link rel="stylesheet" href="css/photography.css">
+</head>
+
+<body> 
+
+  <!-- ===== Header Design ===== -->
+
+  <!-- ===== home section design ===== -->
+  <section class="home" id="home">
+     <div class="home-content">
+        <div id="random-text">Photography </div>
+
+        <div class="services-container">
+            <div class="services-box">
+              <img src="images/photography.png" class="graphicimg">
+            </div>
+
+
+        </div>
+  </section>
+
+  <a href="flex.html" class="btn">Back</a>
+
+  <!-- ===== Custom JavaScript ===== -->
+ 
+   <script src="js/script.js"></script>
+   <script>
+    function getRandomColor() {
+      const letters = '123469BCDE';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 10)];
+      }
+      return color;
+    }
+
+    function changeTextColor() {
+      const randomText = document.getElementById('random-text');
+      randomText.style.color = getRandomColor();
+    }
+
+    changeTextColor();
+    setInterval(changeTextColor, 1000);
+  </script>
+</body>
+<footer>
+    <p><h6> Wendel Jade C. Callado @ 2023 |  All Rights Reserved. </h6></p>
+</footer>
+</html>

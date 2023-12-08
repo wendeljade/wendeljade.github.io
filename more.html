@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport"content="with=device-width, initial-scale=1.0">
+   <title>MicroTech Production</title>
+   
+   <!-- =====Box Icons ===== -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <!-- ===== CSS Files ===== -->
+   <link rel="stylesheet" href="css/more.css">
+</head>
+
+<body> 
+
+  <!-- ===== Header Design ===== -->
+  <header class="header">
+
+  </header>
+
+  <!-- ===== home section design ===== -->
+  <section class="home" id="home">
+     <div class="home-content">
+        <div id="random-text">More About Me</div>
+        <div class="D">
+        <div class="A">
+        <span>| Skills</span>
+        <div class="ul">
+            <ul>
+                <li><img src="images/photoshop.png" class="photoshop"><p class="textp">Layouting</p></li>
+                <li><img src="images/sony.png" class="sony"><p class="texts">Video editing</p></li>
+                <li><img src="images/dslr.png" class="dslr"><p class="textd">Photography</p></li>
+            </ul>
+        </div>
+        </div>
+        <div class="B">
+        <span>|  Hobbies</span>
+        <div class="ul">
+            <ul>
+                <li><img src="images/horror.png" class="horror"><p class="texth">Watching horror movies</p></li>
+                <li><img src="images/music.png" class="music"><p class="textm">Listening music</p></li>
+                <li><img src="images/guitar.png" class="guitar"><p class="textg">Playing guitar</p></li>
+            </ul>
+        </div>
+        </div>
+      </div>
+      <div class="E">
+        <div class="C">
+            <span>|  My Self in 8 Years from now</span>
+                <a href="video.html" class="link">Watch the Video</a>
+            </div>
+      </div>
+
+        <a href="index.html" class="btn">BACK</a>
+     </div>
+
+     <div class="home-img">
+        <img src="images/more.png" class="profile">
+     </div>
+  </section>
+
+
+  <!-- ===== Custom JavaScript ===== -->
+ 
+   <script src="js/script.js"></script>
+   <script>
+    function getRandomColor() {
+      const letters = '123469BCDE';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 10)];
+      }
+      return color;
+    }
+
+    function changeTextColor() {
+      const randomText = document.getElementById('random-text');
+      randomText.style.color = getRandomColor();
+    }
+
+    changeTextColor();
+    setInterval(changeTextColor, 1000);
+  </script>
+</body>
+<footer>
+    <p><h6> Wendel Jade C. Callado @ 2023 |  All Rights Reserved. </h6></p>
+</footer>
+</html>
