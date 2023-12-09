@@ -1,0 +1,93 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"content="with=device-width, initial-scale=1.0">
+    <title>MicroTech Production</title>
+    
+    <!-- =====Box Icons ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- ===== CSS Files ===== -->
+    <link rel="stylesheet" href="css/style.css">
+ </head>
+
+ <body> 
+
+   <!-- ===== Header Design ===== -->
+   <header class="header">
+      <img src="logo.png" class="logo">
+
+      <i class='bx bx-menu' id="menu-icon"></i>
+
+      <nav class="navbar">
+         <a href="home.html" class="active">Home</a>
+         <a href="blog.html">IT 111 Blog Entry</a>
+         <a href="flex.html">Flex Page</a>
+      </nav>
+   </header>
+
+   <!-- ===== home section design ===== -->
+   <section class="home" id="home">
+      <div class="home-content">
+         <h3>Hello, It's Me</h3>
+         <div id="random-text">Wendel Jade C. Callado</div>
+         <h3>| <span class="graphic"> GRAPHIC DESIGNER, WEB DEVELOPER </span> |</h3>
+         <p>I am currently pursuing a Bachelor of Science in Information Technology at
+            <br>Bukidnon State University. I really enjoy it because I'm curious about
+            <br>how things work in the digital world. Besides my studies, I also work
+            <br>as a graphic designer, using my creative skills to make money.
+            <br>I like combining technology and design to create cool stuff.
+            <br>As I navigate through the dynamic field of information technology,
+            <br>I am excited about the endless possibilities and challenges it presents,
+            <br>always eager to learn and adapt to what the future may hold.
+          </p>
+          <p class="follow">
+            Follow me on:
+          </p>
+         <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=100074839996560&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.youtube.com/@microtechproduction16"><i class='bx bxl-youtube'></i></a>
+            <a href="https://www.instagram.com"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://www.tiktok.com/@wendeljadecallado_054?_t=8h3DvBgKApV&_r=1s"><i class='bx bxl-tiktok'></i></a>
+            <a href="https://github.com/wendeljade"><i class='bx bxl-github'></i></a>
+         </div>
+         <a href="more.html" class="btn">More About Me</a>
+      </div>
+
+      <div class="home-img">
+         <img src="images/home.png" class="profile">
+      </div>
+   </section>
+
+   <!-- ===== JavaScript ===== -->
+
+   <script src="js/script.js"></script>
+  
+    <script>
+      function getRandomColor() {
+        const letters = '123469BCDE';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+          color += letters[Math.floor(Math.random() * 10)];
+        }
+        return color;
+      }
+  
+      function changeTextColor() {
+        const randomText = document.getElementById('random-text');
+        randomText.style.color = getRandomColor();
+      }
+  
+      changeTextColor();
+      setInterval(changeTextColor, 1000);
+
+    </script>
+     </div>
+ </body>
+          <!-- Footer area -->
+ <footer>
+   <p><h6> Wendel Jade C. Callado @ 2023 |  All Rights Reserved. </h6></p>
+</footer>
+ </html>
