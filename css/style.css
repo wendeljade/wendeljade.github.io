@@ -112,6 +112,13 @@ span
     color: white;
     position: relative; left: 0px; top: 50px;
 }
+.self
+{
+    font-size: 20px;
+    font-weight: 700;  
+    color: white;
+    position: relative; left: 0px; top: 15px;
+}
 .profile
 {
     width: 327px;
