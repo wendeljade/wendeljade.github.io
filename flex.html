@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport"content="with=device-width, initial-scale=1.0">
+   <title>MicroTech Production</title>
+   
+   <!-- =====Box Icons ===== -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <!-- ===== CSS Files ===== -->
+   <link rel="stylesheet" href="css/flex.css">
+</head>
+
+<body> 
+
+  <!-- ===== Header Design ===== -->
+  <header class="header">
+     <img src="logo.png" class="logo">
+
+
+     <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html">IT 111 Blog Entry</a>
+        <a href="flex.html"class="active">Flex Page</a>
+     </nav>
+  </header>
+
+  <!-- ===== home section design ===== -->
+  <section class="home" id="home">
+     <div class="home-content">
+        <div id="random-text">Flex Page</div>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-camera-movie' ></i>
+                <h3>Photography</h3>
+                <!--<img src="images/horror.png" class="outputimg">-->
+                <p>Here are the snapshots<br>I'd like to showcase.
+                </p>
+                    <a href="photography.html" class="btn">View</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-palette' ></i>
+                <h3>Graphic Design</h3>
+                <p>These are my crafted designs that I want to display.
+                </p>
+                    <a href="graphic.html" class="btn">View</a>
+                </div>
+            <div class="services-box">
+                <i class='bx bxs-bar-chart-alt-2'></i>
+                <h3>Expertise</h3>
+                <p>These are my areas of expertise that<br>I'd like to confidently highlight.
+                </p>
+                    <a href="expertise.html" class="btn">View</a>
+            </div>
+
+        </div>
+
+  </section>
+
+
+  <!-- ===== Custom JavaScript ===== -->
+ 
+   <script src="js/script.js"></script>
+   <script>
+    function getRandomColor() {
+      const letters = '123469BCDE';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 10)];
+      }
+      return color;
+    }
+
+    function changeTextColor() {
+      const randomText = document.getElementById('random-text');
+      randomText.style.color = getRandomColor();
+    }
+
+    changeTextColor();
+    setInterval(changeTextColor, 1000);
+  </script>
+</body>
+<footer>
+    <p><h6> Wendel Jade C. Callado @ 2023 |  All Rights Reserved. </h6></p>
+</footer>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport"content="with=device-width, initial-scale=1.0">
+   <title>MicroTech Production</title>
+   
+   <!-- =====Box Icons ===== -->
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+   
+   <!-- ===== CSS Files ===== -->
+   <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body> 
+
+  <!-- ===== Header Design ===== -->
+  <header class="header">
+     <img src="logo.png" class="logo">
+
+
+     <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="blog.html"class="active">IT 111 Blog Entry</a>
+        <a href="flex.html">Flex Page</a>
+     </nav>
+  </header>
+
+  <!-- ===== home section design ===== -->
+  <section class="home" id="home">
+     <div class="home-content">
+        <div id="random-text">IT111 Blog Entry</div>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bxs-objects-horizontal-left'></i>
+                <h3>Output</h3>
+                <!--<img src="images/horror.png" class="outputimg">-->
+                <p>This is my outputs during
+                    <br>the first semester of the
+                    <br>school year 2023-2024.
+                </p>
+                    <a href="output.html" class="btn">View</a>
+            </div>
+
+            <div class="services-box">
+                <i class='bx bxs-book'></i>
+                <h3>Learnings</h3>
+                <p>This is my Learnings during
+                    <br>the first semester of the
+                    <br>school year 2023-2024.
+                </p>
+                    <a href="learnings.html" class="btn">View</a>
+                </div>
+            <div class="services-box">
+                <i class='bx bxs-hourglass-bottom'></i>
+                <h3>Lesson that Challenge Me the Most</h3>
+                <p>This is the lesson that challenge me the most
+                    <br>during the first semester of the<br>school year 2023-2024.
+                </p>
+                    <a href="challenge.html" class="btn">View</a>
+            </div>
+
+        </div>
+
+  </section>
+
+
+  <!-- ===== Custom JavaScript ===== -->
+ 
+   <script src="js/script.js"></script>
+   <script>
+    function getRandomColor() {
+      const letters = '123469BCDE';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 10)];
+      }
+      return color;
+    }
+
+    function changeTextColor() {
+      const randomText = document.getElementById('random-text');
+      randomText.style.color = getRandomColor();
+    }
+
+    changeTextColor();
+    setInterval(changeTextColor, 1000);
+  </script>
+</body>
+<footer>
+    <p><h6> Wendel Jade C. Callado @ 2023 |  All Rights Reserved. </h6></p>
+</footer>
+</html>
